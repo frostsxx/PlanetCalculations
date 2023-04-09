@@ -15,3 +15,5 @@ When you reach Jupiter you will have two questions:
 To answer the first one we can find our new age on Earth by adding the time it took to get to Jupiter to our current age. EX: (newEarthAgeJupiter = userAge + journeyToJupiter;)
 
 And to answer the last one we can find our new age on Jupiter by following the same formula we used earlier, but substituting our new earth age. EX: (newJupiterAge = newEarthAgeJupiter / jupiterYears;)
+
+P.S: Program still in development... (mostly implementing user limitations)
