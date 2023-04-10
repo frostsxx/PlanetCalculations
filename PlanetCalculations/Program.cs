@@ -96,7 +96,6 @@ namespace PlanetCalculations
             }
             else if (planet >= 1 && planet <= 8)
             {
-<<<<<<< HEAD
                 /*
                  * The index position for the planetAge, newEarthAge, 
                  * and newPlanetAge arrays should be planet-2 instead of planet-1, 
@@ -106,70 +105,7 @@ namespace PlanetCalculations
                 Console.WriteLine($"Your age on {planetNames[planet - 1]} is: {planetAge[planet - 2]} years old.\n");
                 Console.WriteLine($"If you were to fly to {planetNames[planet - 1]}... \n ");
                 Console.WriteLine($"Your new age on Earth would be: {newEarthAge[planet - 2]} years old.");
-                Console.WriteLine($"Your new age on {planetNames[planet - 1]} would be: {newPlanetAge[planet - 2]} years old.");
-=======
-                case 1:
-                    Console.WriteLine($"Your age on Earth is: {userAge} years old.");
-                    Console.WriteLine($"Your age on Mercury is: {planetAge[0]} years old.\n");
-                    Console.WriteLine("If you were to fly to Mercury... \n ");
-                    Console.WriteLine($"Your new age on Earth would be: {newEarthAge[0]} years old.");
-                    Console.WriteLine($"Your new age on Mercury would be: {newPlanetAge[0]} years old.");
-                    break;
-
-                case 2:
-                    Console.WriteLine($"Your age on Earth is: {userAge} years old.");
-                    Console.WriteLine($"Your age on Venus is: {planetAge[1]} years old.\n");
-                    Console.WriteLine("If you were to fly to Venus... \n ");
-                    Console.WriteLine($"Your new age on Earth would be: {newEarthAge[1]} years old.");
-                    Console.WriteLine($"Your new age on Venus would be: {newPlanetAge[1]} years old.");
-                    break;
-
-                case 3:
-                    Console.WriteLine($"Dummy you have {userAge} years old! :P");
-                    break;
-
-                case 4:
-                    Console.WriteLine($"Your age on Earth is: {userAge} years old.");
-                    Console.WriteLine($"Your age on Mars is: {planetAge[3]} years old.\n");
-                    Console.WriteLine("If you were to fly to Mars... \n ");
-                    Console.WriteLine($"Your new age on Earth would be: {newEarthAge[3]} years old.");
-                    Console.WriteLine($"Your new age on Mars would be: {newPlanetAge[3]} years old.");
-                    break;
-
-                case 5:
-                    Console.WriteLine($"Your age on Earth is: {userAge} years old.");
-                    Console.WriteLine($"Your age on Jupiter is: {planetAge[4]} years old.\n");
-                    Console.WriteLine("If you were to fly to Jupiter... \n ");
-                    Console.WriteLine($"Your new age on Earth would be: {newEarthAge[4]} years old.");
-                    Console.WriteLine($"Your new age on Jupiter would be: {newPlanetAge[4]} years old.");
-                    break;
-
-                case 6:
-                    Console.WriteLine($"Your age on Earth is: {userAge} years old.");
-                    Console.WriteLine($"Your age on Saturn is: {planetAge[5]} years old.\n");
-                    Console.WriteLine("If you were to fly to Saturn... \n ");
-                    Console.WriteLine($"Your new age on Earth would be: {newEarthAge[5]} years old.");
-                    Console.WriteLine($"Your new age on Saturn would be: {newPlanetAge[5]} years old.");
-                    break;
-
-                case 7:
-                    Console.WriteLine($"Your age on Earth is: {userAge} years old.");
-                    Console.WriteLine($"Your age on Uranus is: {planetAge[6]} years old.\n");
-                    Console.WriteLine("If you were to fly to Uranus... \n ");
-                    Console.WriteLine($"Your new age on Earth would be: {newEarthAge[6]} years old.");
-                    Console.WriteLine($"Your new age on Uranus would be: {newPlanetAge[6]} years old.");
-                    break;
-
-                case 8:
-                    Console.WriteLine($"Your age on Earth is: {userAge} years old.");
-                    Console.WriteLine($"Your age on Neptune is: {planetAge[7]} years old.\n");
-                    Console.WriteLine("If you were to fly to Neptune... \n ");
-                    Console.WriteLine($"Your new age on Earth would be: {newEarthAge[7]} years old.");
-                    Console.WriteLine($"Your new age on Neptune would be: {newPlanetAge[7]} years old.");
-                    break;
->>>>>>> 36b97d1347556f5ec3e1d6e15477fa0f513ebf80
             }
-
             Console.ReadLine();
 
         }
