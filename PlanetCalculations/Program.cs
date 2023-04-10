@@ -107,7 +107,7 @@ namespace PlanetCalculations
 
             else if (planet == 3)
             {
-                Console.WriteLine("Your age on Earth would be: " + userAge + " years old.");
+                Console.WriteLine("Dummy you have " + userAge + " years old! :P");
             }
 
             else if (planet == 4)
