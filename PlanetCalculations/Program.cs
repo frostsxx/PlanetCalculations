@@ -96,11 +96,6 @@ namespace PlanetCalculations
             }
             else if (planet >= 1 && planet <= 8)
             {
-                /*
-                 * The index position for the planetAge, newEarthAge, 
-                 * and newPlanetAge arrays should be planet-2 instead of planet-1, 
-                 * since the planet variable is 1-based and the arrays are 0-based.
-                 */
                 Console.WriteLine($"Your age on Earth is: {userAge} years old.");
                 Console.WriteLine($"Your age on {planetNames[planet - 1]} is: {planetAge[planet - 1]} years old.\n");
                 Console.WriteLine($"If you were to fly to {planetNames[planet - 1]}... \n ");
