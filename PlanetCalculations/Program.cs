@@ -6,14 +6,24 @@ namespace PlanetCalculations
     {
         static void Main(string[] args)
         {
+
                 // Choose a planet
                 Console.WriteLine("Choose a planet number (1 - Mercury / 2 - Venus / 3 - Earth / 4 - Mars / 5 - Jupiter / 6 - Saturn / 7 - Uranus / 8 - Neptune): ");
-                int planet = Convert.ToInt32(Console.ReadLine());
+                var planet = int.Parse(Console.ReadLine());
+
+
+                while (planet < 1 || planet > 8)
+                {
+                    Console.WriteLine("Error: Invalid planet number.\n");
+                    // Re-enter planet number
+                    Console.Write("Enter a valid planet number: ");
+                    planet = int.Parse(Console.ReadLine());
+                }
 
 
                 // Your Age
                 Console.WriteLine("How old are you?");
-                int userAge = Convert.ToInt32(Console.ReadLine());
+                int userAge = int.Parse(Console.ReadLine());
 
 
                 // Length of years of planets (in Earth years)
@@ -133,11 +143,6 @@ namespace PlanetCalculations
                 Console.WriteLine("If you were to fly to Neptune... \n ");
                 Console.WriteLine("Your new age on Earth would be: " + newEarthAgeNeptune + " years old.");
                 Console.WriteLine("Your new age on Neptune would be: " + newNeptuneAge + " years old.");
-            }
-
-            else
-            {
-                Console.WriteLine("Invalid Planet number.");
             }
 
                 Console.ReadLine();
