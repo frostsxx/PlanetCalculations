@@ -111,7 +111,6 @@ namespace PlanetCalculations
                     break;
 
                 case 4:
-
                     Console.WriteLine($"Your age on Earth is: {userAge} years old.");
                     Console.WriteLine($"Your age on Mars is: {planetAge[3]} years old.\n");
                     Console.WriteLine("If you were to fly to Mars... \n ");
