@@ -11,11 +11,11 @@ namespace PlanetCalculations
             int userAge;
 
             // Choose a planet
-            Console.WriteLine("Choose a planet number (1 - Mercury / 2 - Venus / 3 - Earth / 4 - Mars / 5 - Jupiter / 6 - Saturn / 7 - Uranus / 8 - Neptune): ");
+            Console.Write("Choose a planet number (1 - Mercury / 2 - Venus / 3 - Earth / 4 - Mars / 5 - Jupiter / 6 - Saturn / 7 - Uranus / 8 - Neptune): ");
 
             while (!int.TryParse(Console.ReadLine(), out planet))
             {
-                Console.WriteLine("You are only allowed to use numbers, please enter again: ");
+                Console.Write("You are only allowed to use numbers, please enter again: ");
             }
 
             while (planet < 1 || planet > 8)
@@ -28,11 +28,11 @@ namespace PlanetCalculations
 
 
             // Your Age
-            Console.WriteLine("How old are you?");
+            Console.Write("How old are you?");
 
             while (!int.TryParse(Console.ReadLine(), out userAge))
             {
-                Console.WriteLine("You are only allowed to use numbers, please enter again: ");
+                Console.Write("You are only allowed to use numbers, please enter again: ");
             }
 
 
