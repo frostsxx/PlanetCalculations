@@ -88,7 +88,7 @@ namespace PlanetCalculations
             }
 
             // Define planet names
-            string[] planetNames = { "Earth", "Mercury", "Venus", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune" };
+            string[] planetNames = { "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune" };
 
             if (planet == 3)
             {
@@ -102,10 +102,12 @@ namespace PlanetCalculations
                  * since the planet variable is 1-based and the arrays are 0-based.
                  */
                 Console.WriteLine($"Your age on Earth is: {userAge} years old.");
-                Console.WriteLine($"Your age on {planetNames[planet - 1]} is: {planetAge[planet - 2]} years old.\n");
+                Console.WriteLine($"Your age on {planetNames[planet - 1]} is: {planetAge[planet - 1]} years old.\n");
                 Console.WriteLine($"If you were to fly to {planetNames[planet - 1]}... \n ");
-                Console.WriteLine($"Your new age on Earth would be: {newEarthAge[planet - 2]} years old.");
+                Console.WriteLine($"Your new age on Earth would be: {newEarthAge[planet - 1]} years old.");
+                Console.WriteLine($"Your new age on {planetNames[planet - 1]} would be: {newPlanetAge[planet - 1]} years old.");
             }
+
             Console.ReadLine();
 
         }
