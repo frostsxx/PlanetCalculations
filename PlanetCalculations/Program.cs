@@ -53,7 +53,7 @@ namespace PlanetCalculations
 
             // Age on planets
             double[] planetAge = new double[8];
-            for(int index = 0; index < planetAge.Length; index++)
+            for (int index = 0; index < planetAge.Length; index++)
             {
                 planetAge[index] = userAge / planetYears[index];
             }
