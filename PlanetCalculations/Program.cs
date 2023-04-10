@@ -28,7 +28,7 @@ namespace PlanetCalculations
 
 
             // Your Age
-            Console.Write("How old are you?");
+            Console.Write("How old are you? ");
 
             while (!int.TryParse(Console.ReadLine(), out userAge))
             {
