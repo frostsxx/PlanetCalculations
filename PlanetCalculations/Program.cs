@@ -107,11 +107,7 @@ namespace PlanetCalculations
                 Console.WriteLine($"Your new age on Earth would be: {newEarthAge[planet - 1]} years old.");
                 Console.WriteLine($"Your new age on {planetNames[planet - 1]} would be: {newPlanetAge[planet - 1]} years old.");
             }
-<<<<<<< HEAD
-
-=======
             
->>>>>>> 0bd706eba0e32c3f838b8b03235246e35b96ff42
             Console.ReadLine();
             
         }
