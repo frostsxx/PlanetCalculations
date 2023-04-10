@@ -106,8 +106,9 @@ namespace PlanetCalculations
                 Console.WriteLine($"If you were to fly to {planetNames[planet - 1]}... \n ");
                 Console.WriteLine($"Your new age on Earth would be: {newEarthAge[planet - 2]} years old.");
             }
+            
             Console.ReadLine();
-
+            
         }
 
     }
