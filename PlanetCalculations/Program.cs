@@ -13,20 +13,12 @@ namespace PlanetCalculations
             // Choose a planet
             Console.Write("Choose a planet number (1 - Mercury / 2 - Venus / 3 - Earth / 4 - Mars / 5 - Jupiter / 6 - Saturn / 7 - Uranus / 8 - Neptune): ");
 
-            while (!int.TryParse(Console.ReadLine(), out planet))
+            while (!int.TryParse(Console.ReadLine(), out planet) || planet < 1 || planet > 8)
             {
-                Console.Write("You are only allowed to use numbers, please enter again: ");
+                Console.Write("Invalid planet number, please enter a valid number between 1 and 8: ");
             }
-
-            while (planet < 1 || planet > 8)
-            {
-                Console.WriteLine("Error: Invalid planet number.\n");
-                // Re-enter planet number
-                Console.Write("Enter a valid planet number: ");
-                planet = int.Parse(Console.ReadLine());
-            }
-
-
+            
+           
             // Your Age
             Console.Write("How old are you? ");
 
@@ -96,26 +88,16 @@ namespace PlanetCalculations
             }
             else if (planet >= 1 && planet <= 8)
             {
-                /*
-                 * The index position for the planetAge, newEarthAge, 
-                 * and newPlanetAge arrays should be planet-2 instead of planet-1, 
-                 * since the planet variable is 1-based and the arrays are 0-based.
-                 */
                 Console.WriteLine($"Your age on Earth is: {userAge} years old.");
                 Console.WriteLine($"Your age on {planetNames[planet - 1]} is: {planetAge[planet - 1]} years old.\n");
                 Console.WriteLine($"If you were to fly to {planetNames[planet - 1]}... \n ");
                 Console.WriteLine($"Your new age on Earth would be: {newEarthAge[planet - 1]} years old.");
                 Console.WriteLine($"Your new age on {planetNames[planet - 1]} would be: {newPlanetAge[planet - 1]} years old.");
             }
-<<<<<<< HEAD
 
-=======
-            
->>>>>>> 0bd706eba0e32c3f838b8b03235246e35b96ff42
             Console.ReadLine();
             
         }
-
     }
 }
 
